@@ -11,8 +11,8 @@ Topics:
 
 ## Project Description
 
-* There is an API built that has authentication built into it. The API holds a list of friends and lets you add, edit, or remove friends from that list. 
-* All of the API endpoints (except the login endpoint) are considered "protected", meaning you have to make the request with an authentication token in the header or the API will send back a `401` error. 
+* There is an API built that has authentication built into it. The API holds a list of friends and lets you add, edit, or remove friends from that list.
+* All of the API endpoints (except the login endpoint) are considered "protected", meaning you have to make the request with an authentication token in the header or the API will send back a `401` error.
 * Take your examples from the guided project and use them to build a more sophisticated application. Have fun!
 * Once your server is up and running, the URL you'll be able to hit from within your app is `http://localhost:5000`. You will however need an authentication header on all the calls except the login call.
 * Take a look at the endpoints that our API has to offer in `server.js`.
@@ -32,6 +32,7 @@ Topics:
 * `cd` into the _friends_ folder and type `yarn add axios react-router-dom` which will install the needed dependencies.
 
 ## Build the App!
+
 * Add a route for a login page and build out a simple login form with username and password inputs and a submit button (design this however you would like).
 * The login function should save the returned token to localStorage. You can setup `isLoading` state in your Login component, and show a spinner on your form or in your button while the login request is happening.
 * When the request returns, save the token to `localStorage`, then use the history object in your Login component to navigate your user to your FriendsList route
@@ -40,6 +41,7 @@ Topics:
 * In your FriendsList component, rendered with `<ProtectedRoute />`, you will create a list of your friends that you get from the API.
 
 **Adding New Friends**
+
 * Create a form to collects data for a new friend.
 * Make a POST request to add a friend to the database
 * Each `friend` item that is in the `friends` array should have the following format:
