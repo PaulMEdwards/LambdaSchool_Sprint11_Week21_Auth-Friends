@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+  
+  .link {
+    color: #61dafb;
+  }
+
+  input,button {
+    background-color: #282c34;
+    color: lightgrey;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    border-width: 1px;
+    font-size: 1.125em;
+  }
+  input.inputName {
+    width: 175px;
+  }
+  input.inputAge {
+    width: 50px;
+  }
+  input.inputEmail {
+    width: 225px;
+  }
+
+  header {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    
+    font-size: calc(10px + 2vmin);
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .logo {
+      height: 100px;
+    }
+
+    .title {
+      font-size: 1.5em;
+    }
+  }
+
+  .friends-list {
+    width: 80%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    grid-gap: 0.5rem;
+
+    .friend {
+      height: 100px;
+      min-width: 325px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      border: 1px solid;
+      border-radius: 5px;
+
+      p {
+        margin: 0;
+      }
+
+      .label {
+        font-weight: bold;
+      }
+
+      .name {
+        font-size: 1.5em;
+      }
+      .age,.email {
+        font-size: 1.15em;
+      }
+    }
+  }
+}
