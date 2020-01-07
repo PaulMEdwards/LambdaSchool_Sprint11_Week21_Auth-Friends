@@ -30,7 +30,7 @@ const Friends = () => {
           <div className='friend' key={friend.id}>
             <p className='name'><span className='label'>Name:</span> {friend.name}</p>
             <p className='age'><span className='label'>Age:</span> {friend.age}</p>
-            <p className='email'><span className='label'>Email:</span> <a className="link" href={"mailto:"+friend.email}>{friend.email}</a></p>
+            <p className='email'><span className='label'>Email:</span> <a className="link" href={"mailto:"+friend.email} target="_blank" rel="noopener noreferrer">{friend.email}</a></p>
           </div>
         ))}
       </div>
